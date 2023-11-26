@@ -1,27 +1,60 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --base-color : #1A2238;
+  --primary-color : #9DAAF2;
+  --section-color : #9DAAF2;
+  --light-color : #ffffffd4;
+  --dark-color : #000000d4;
 }
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New';
+}
+
+.container-main{
+  max-width: 900px;
+  margin: auto;
+}
+
+body{
+  background-color: var(--base-color);
+}
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+    --base-color : #1A2238;
+    --primary-color : #9DAAF2;
+    --section-color : #9DAAF2;
+    --light-color : #ffffffd4;
+    --dark-color : #000000d4;
+    --text-highlight : #FF6A3D;
+}
+}
+.bg-base{
+background-color: var(--base-color);
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.bg-primary{
+  background-color: var(--primary-color);
+}
+
+.bg-section{
+  background-color: var(--section-color);
+}
+
+
+
+.text-light{
+  color: var(--light-color);
+}
+.text-dark{
+  color: var(--dark-color);
+}
+
+.text-highlight{
+  color: var(--text-highlight);
 }
