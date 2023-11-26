@@ -3,11 +3,6 @@ import { Courier_Prime } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer';
-export const text = Courier_Prime({
-  subsets: ['latin'],
-  weight: ['400'],
-  style: ['normal'],
-});
 
 
 
@@ -23,12 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-      </head>
       <body>
         <Navbar/>
-        <div className={text.className}>{children}</div>
+        {children}
         <Footer/>
       </body>
     </html>
