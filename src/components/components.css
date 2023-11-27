@@ -16,27 +16,24 @@ li {
   z-index: 1000;
   background: transparent;
 }
-
+.mobile-navbar{
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+}
 .mobile-navbar ul {
   display: flex;
-  margin-top: 70px;
+  margin-top: 73px;
   flex-direction: row;
   width: 100vw;
   justify-content: space-evenly;
 }
 
-.mobile-navbar ul li {
-  margin-top: 5px;
-  text-align: center;
-}
-
 .mobile-navbar,
-.navbar-fixed ul li:hover {
-  text-decoration: none;
+.navbar-fixed ul > li:hover {
   font-weight: bolder;
   border-bottom: 1px solid var(--text-highlight);
-  cursor: pointer;
-  text-decoration: none;
   transform: translateY(-5px);
 }
 

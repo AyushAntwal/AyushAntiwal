@@ -2,59 +2,88 @@
 @tailwind components;
 @tailwind utilities;
 :root {
-  --base-color : #1A2238;
-  --primary-color : #9DAAF2;
-  --section-color : #9DAAF2;
-  --light-color : #ffffffd4;
-  --dark-color : #000000d4;
+  --base-color: #1a2238;
+  --primary-color: #9daaf2;
+  --section-color: #9daaf2;
+  --light-color: #ffffffd4;
+  --dark-color: #000000d4;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Courier New';
+  font-family: "Courier New";
+  scroll-behavior: smooth !important;
 }
 
-.container-main{
+.pointer {
+  cursor: url("/2080-glove-cursor.svg"), pointer !important;
+}
+.cursor-pointer {
+  cursor: url("/2080-glove-cursor.svg"), pointer !important;
+}
+a {
+  cursor: url("/2080-glove-cursor.svg"), pointer !important;
+}
+
+/* Scrollbar width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  width: 0px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--text-highlight);
+  border-radius: 40px 10px 10px 40px;
+}
+
+.container-main {
   max-width: 900px;
   margin: auto;
 }
-
-body{
+nav{
+  cursor: url('/2080-glove-pointer.svg'), auto !important;
+}
+body {
   background-color: var(--base-color);
+  cursor: url('/2080-glove-pointer.svg'), auto !important;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --base-color : #1A2238;
-    --primary-color : #9DAAF2;
-    --section-color : #9DAAF2;
-    --light-color : #ffffffd4;
-    --dark-color : #000000d4;
-    --text-highlight : #FF6A3D;
+    --base-color: #1a2238;
+    --primary-color: #9daaf2;
+    --section-color: #9daaf2;
+    --light-color: #ffffffd4;
+    --dark-color: #000000d4;
+    --text-highlight: #ff6a3d;
+  }
 }
-}
-.bg-base{
-background-color: var(--base-color);
+.bg-base {
+  background-color: var(--base-color);
 }
 
-.bg-primary{
+.bg-primary {
   background-color: var(--primary-color);
 }
 
-.bg-section{
+.bg-section {
   background-color: var(--section-color);
 }
 
-
-
-.text-light{
+.text-light {
   color: var(--light-color);
 }
-.text-dark{
+.text-dark {
   color: var(--dark-color);
 }
 
-.text-highlight{
+.text-highlight {
   color: var(--text-highlight);
 }

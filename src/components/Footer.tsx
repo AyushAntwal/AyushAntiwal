@@ -2,8 +2,8 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="container-main p-10 flex align-top justify-between">
-      <div className="text-[#daf55471]">
+    <div  className="container-main p-10 flex align-top justify-between">
+      <div id="contact" className="text-[#daf55471]">
         <h1 className="text-1 underline">Contact</h1>
         <h1 className="text-1xl">Ayush Antiwal</h1>
         <h1 className="text-1xl">
